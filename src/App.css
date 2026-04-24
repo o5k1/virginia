@@ -1,0 +1,24 @@
+.flower {
+  position: absolute;
+}
+
+.small {
+  width: 60%;
+  rotate: 40deg;
+}
+
+.top-left {
+  left: -30%;
+  top: -12%;
+}
+
+.bottom-right {
+  right: -30%;
+  bottom: -12%;
+}
+
+.big {
+  width: 90%;
+  rotate: 40deg;
+  opacity: 0.1;
+}
