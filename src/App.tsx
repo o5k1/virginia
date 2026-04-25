@@ -44,12 +44,13 @@ function App() {
                         </div>
                         <Drawer>
                             <DrawerTrigger asChild>
-                                <Button variant="ghost" className="font-eyesome self-center">stai pensando ad un regalo?</Button>
+                                <Button variant="outline" className="font-eyesome self-center border-none px-4">stai pensando
+                                    ad un regalo?</Button>
                             </DrawerTrigger>
-                            <DrawerContent className="font-cormorant">
+                            <DrawerContent className="font-cormorant text-lg">
                                 <div className="mx-auto w-full max-w-sm">
                                     <div className="p-4 pb-0">
-                                        <div className="text-lg mb-8">
+                                        <div className="mb-8">
                                             Se ti stai chiedendo cosa possa essere utile o gradito, ecco due idee
                                             semplici che puoi usare come spunto.
                                         </div>
@@ -66,7 +67,7 @@ function App() {
                                                         passerà nelle sue mani quando compirà 18 anni,
                                                         se vuoi contribuire:
                                                     </div>
-                                                    <div className="flex w-full max-w-sm flex-col gap-2 text-sm">
+                                                    <div className="flex w-full max-w-sm flex-col gap-2">
                                                         <dl className="flex items-center justify-between">
                                                             <dt>IBAN</dt>
                                                             <dd className="text-muted-foreground">PIUSAH
@@ -87,17 +88,14 @@ function App() {
                                                 <AccordionTrigger>Per i prossimi mesi</AccordionTrigger>
                                                 <AccordionContent>
                                                     <div className="mb-6">
-                                                        Qui trovi alcune cose pratiche che userà subito: seggioloni,
+                                                        Abbiamo creato una list qui dove trovi alcune cose pratiche che
+                                                        userà subito: seggioloni,
                                                         giochi,
                                                         piccole grandi comodità per sopravvivere con stile ai primi
-                                                        tempi.
+                                                        tempi:
                                                     </div>
-                                                    <div className="mb-4">
-                                                        Abbiamo creato una lista qui:
-                                                    </div>
-                                                    <Separator/>
                                                     <div className="mt-4">
-                                                        <div className="flex w-full max-w-sm flex-col gap-2 text-sm">
+                                                        <div className="flex w-full max-w-sm flex-col">
                                                             <dl className="flex items-center justify-between">
                                                                 <dt>Casa Del Bambino</dt>
                                                             </dl>
@@ -124,7 +122,8 @@ function App() {
                                     </div>
                                     <DrawerFooter>
                                         <DrawerClose asChild>
-                                            <Button variant="outline" className="self-center">Chiudi</Button>
+                                            <Button variant="outline"
+                                                    className="self-center border-none px-4">Chiudi</Button>
                                         </DrawerClose>
                                     </DrawerFooter>
                                 </div>
