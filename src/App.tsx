@@ -1,30 +1,33 @@
 import './App.css'
-import flower from './assets/images/ortensia.png'
 
 function App() {
   return (
     <>
-      <section>
-        <div className="p-4 h-screen" >
-          <img src={flower} className="flower big top-left" alt="" />
-          <img src={flower} className="flower big bottom-right" alt="" />
-          <img src={flower} className="flower small top-left" alt="" />
-          <img src={flower} className="flower small bottom-right" alt="" />
-
-          <div className="text-center font-cinzel h-full p-4 flex flex-col justify-around border-solid border-2 border-[#e3cfdc] x-3">
-            <div className="font-cinzel">Il battesimo di</div>
-            <div className="font-eyesome text-6xl">Virginia</div>
-            <div>Domenica 24 Maggio 2026</div>
-            <div className="font-eyesome text-4xl">Cerimonia</div>
+      <section className="card-section">
+        <div className="card-inner p-4 h-full" >
+          <div className="text-center font-cinzel text-lg h-full px-4 py-10 flex flex-col justify-around border-solid border-2 border-[#e3cfdc]">
             <div>
-              <div>Duomo di San Martino di Lupari</div>
-              <div className="text-[#af96a9]">Ore 11.00</div>
+              <div className="">Il battesimo di</div>
+              <div className="font-eyesome text-7xl mt-12 mb-6">Virginia</div>
+              <div>Domenica 24 Maggio 2026</div>
             </div>
-            <div className="font-eyesome text-4xl">Festeggiamenti</div>
             <div>
-              <div>Al Monte di Livio</div>
-              <div className="text-[#af96a9]">Via Fratta 83</div>
-              <div className="text-[#af96a9]">Colceresa VI</div>
+              <div className="font-eyesome text-4xl">Cerimonia</div>
+              <div>
+                <div className="mt-8">Duomo di San Martino di Lupari</div>
+                <div className="text-[#af96a9]">Ore 11.00</div>
+              </div>
+            </div>
+            <div>
+              <div className="font-eyesome text-4xl">Festeggiamenti</div>
+              <div className="mt-8">
+                <div>Al Monte di Livio</div>
+                <div className="text-[#af96a9]">Via Fratta 83</div>
+                <div className="text-[#af96a9]">Colceresa VI</div>
+              </div>
+            </div>
+            <div className="font-eyesome">
+              stai pensando ad un regalo?
             </div>
           </div>
         </div>
