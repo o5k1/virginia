@@ -1,24 +1,57 @@
-.flower {
+.card-section {
+  position: relative;
+  overflow: hidden;
+  height: 100svh;
+}
+
+.card-section::before,
+.card-section::after {
+  content: "";
   position: absolute;
-}
-
-.small {
-  width: 60%;
+  background: url("@/assets/images/ortensia.png") no-repeat center / contain;
   rotate: 40deg;
+  pointer-events: none;
 }
 
-.top-left {
+/* big faded flower — top-left */
+.card-section::before {
+  width: 90%;
+  aspect-ratio: 1;
+  left: -30%;
+  top: -12%;
+  opacity: 0.1;
+}
+
+/* big faded flower — bottom-right */
+.card-section::after {
+  width: 90%;
+  aspect-ratio: 1;
+  right: -30%;
+  bottom: -12%;
+  opacity: 0.1;
+}
+
+.card-inner {
+  position: relative;
+}
+
+.card-inner::before,
+.card-inner::after {
+  content: "";
+  position: absolute;
+  background: url("@/assets/images/ortensia.png") no-repeat center / contain;
+  width: 60%;
+  aspect-ratio: 1;
+  rotate: 40deg;
+  pointer-events: none;
+}
+
+.card-inner::before {
   left: -30%;
   top: -12%;
 }
 
-.bottom-right {
+.card-inner::after {
   right: -30%;
   bottom: -12%;
-}
-
-.big {
-  width: 90%;
-  rotate: 40deg;
-  opacity: 0.1;
 }
