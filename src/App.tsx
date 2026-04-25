@@ -39,12 +39,12 @@ function App() {
                             <div className="mt-8">
                                 <div>Al Monte di Livio</div>
                                 <div className="text-[#af96a9]">Via Fratta 83</div>
-                                <div className="text-[#af96a9]">Colceresa VI</div>
+                                <div className="text-[#af96a9]">Colceresa, VI</div>
                             </div>
                         </div>
                         <Drawer>
                             <DrawerTrigger asChild>
-                                <Button variant="outline" className="font-eyesome self-center border-none px-4">stai pensando
+                                <Button variant="outline" className="font-eyesome self-center border-none px-6 text-base">stai pensando
                                     ad un regalo?</Button>
                             </DrawerTrigger>
                             <DrawerContent className="font-cormorant text-lg">
@@ -59,40 +59,14 @@ function App() {
                                             collapsible
                                             className="max-w-lg"
                                         >
-                                            <AccordionItem value="shipping">
-                                                <AccordionTrigger>Per il suo futuro</AccordionTrigger>
-                                                <AccordionContent>
-                                                    <div className="mb-8">
-                                                        Virginia ha un fondo alimentato regolarmente da mamma e papà che
-                                                        passerà nelle sue mani quando compirà 18 anni,
-                                                        se vuoi contribuire:
-                                                    </div>
-                                                    <div className="flex w-full max-w-sm flex-col gap-2">
-                                                        <dl className="flex items-center justify-between">
-                                                            <dt>IBAN</dt>
-                                                            <dd className="text-muted-foreground">PIUSAH
-                                                                PU3I2J23432432U4
-                                                            </dd>
-                                                        </dl>
-                                                        <Separator/>
-                                                        <dl className="flex items-center justify-between">
-                                                            <dt>Causale</dt>
-                                                            <dd className="text-muted-foreground">Fondo Virginia
-                                                                battesimo
-                                                            </dd>
-                                                        </dl>
-                                                    </div>
-                                                </AccordionContent>
-                                            </AccordionItem>
-                                            <AccordionItem value="returns">
+                                            <AccordionItem value="present">
                                                 <AccordionTrigger>Per i prossimi mesi</AccordionTrigger>
                                                 <AccordionContent>
                                                     <div className="mb-6">
-                                                        Abbiamo creato una list qui dove trovi alcune cose pratiche che
-                                                        userà subito: seggioloni,
-                                                        giochi,
+                                                        Abbiamo creato una lista dove trovi alcune cose pratiche che
+                                                        userà subito:
                                                         piccole grandi comodità per sopravvivere con stile ai primi
-                                                        tempi:
+                                                        tempi.
                                                     </div>
                                                     <div className="mt-4">
                                                         <div className="flex w-full max-w-sm flex-col">
@@ -115,6 +89,31 @@ function App() {
                                                                 </dd>
                                                             </dl>
                                                         </div>
+                                                    </div>
+                                                </AccordionContent>
+                                            </AccordionItem>
+                                            <AccordionItem value="future">
+                                                <AccordionTrigger>Per il suo futuro</AccordionTrigger>
+                                                <AccordionContent>
+                                                    <div className="mb-8">
+                                                        Virginia ha un fondo alimentato regolarmente da mamma e papà che
+                                                        passerà nelle sue mani quando compirà 18 anni,
+                                                        se vuoi contribuire:
+                                                    </div>
+                                                    <div className="flex w-full max-w-sm flex-col gap-2">
+                                                        <dl className="flex items-center justify-between">
+                                                            <dt>IBAN</dt>
+                                                            <dd className="text-muted-foreground">
+                                                                IT44N0503401753000000081208
+                                                            </dd>
+                                                        </dl>
+                                                        <Separator/>
+                                                        <dl className="flex items-center justify-between">
+                                                            <dt>Causale</dt>
+                                                            <dd className="text-muted-foreground">Fondo Virginia
+                                                                Battesimo
+                                                            </dd>
+                                                        </dl>
                                                     </div>
                                                 </AccordionContent>
                                             </AccordionItem>
