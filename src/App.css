@@ -15,7 +15,7 @@
 
 /* big faded flower — top-left */
 .card-section::before {
-  width: 90%;
+  width: 110%;
   aspect-ratio: 1;
   left: -30%;
   top: -12%;
@@ -24,7 +24,7 @@
 
 /* big faded flower — bottom-right */
 .card-section::after {
-  width: 90%;
+  width: 110%;
   aspect-ratio: 1;
   right: -30%;
   bottom: -12%;
