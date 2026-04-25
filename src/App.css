@@ -8,7 +8,7 @@
 .card-section::after {
   content: "";
   position: absolute;
-  background: url("@/assets/images/ortensia.png") no-repeat center / contain;
+  background: url("@/assets/images/ortensia.webp") no-repeat center / contain;
   rotate: 40deg;
   pointer-events: none;
 }
@@ -39,7 +39,7 @@
 .card-inner::after {
   content: "";
   position: absolute;
-  background: url("@/assets/images/ortensia.png") no-repeat center / contain;
+  background: url("@/assets/images/ortensia.webp") no-repeat center / contain;
   width: 60%;
   aspect-ratio: 1;
   rotate: 40deg;
