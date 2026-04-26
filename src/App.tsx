@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import './App.css'
 import {Button} from "@/components/ui/button"
 import {
@@ -16,6 +17,13 @@ import {
 import {Separator} from "@/components/ui/separator.tsx"
 
 function App() {
+    const [drawerOpen, setDrawerOpen] = useState(false)
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search)
+        if (params.has("present")) {
+            setDrawerOpen(true)
+        }
+    }, [])
     return (
         <>
             <section className="card-section">
@@ -42,8 +50,8 @@ function App() {
                                 <div className="text-[#af96a9]">Colceresa, VI</div>
                             </div>
                         </div>
-                        <Drawer>
-                            <DrawerTrigger asChild>
+                        <Drawer open={drawerOpen} onOpenChange={setDrawerOpen}>
+                            <DrawerTrigger asChild hidden>
                                 <Button variant="outline" className="font-eyesome self-center border-none px-6 text-base">stai pensando
                                     ad un regalo?</Button>
                             </DrawerTrigger>
